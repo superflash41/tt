@@ -2,24 +2,6 @@
 
 A beamer for showing information about your thesis.
 
-## Directory Structure
-
-*   **`base/`**: core configuration files.
-    *   [`base/commands.tex`](presentation/base/commands.tex): Define presentation title, author, date, and custom commands.
-    *   [`base/packages.tex`](presentation/base/packages.tex)
-    *   [`base/presentation.tex`](presentation/base/presentation.tex): Main LaTeX file to compile. **DO NOT MODIFY.**
-    *   [`base/styles.tex`](presentation/base/styles.tex)
-*   **`bib/`**: holds bibliography files.
-    *   [`bib/bibliography.bib`](presentation/bib/bibliography.bib): Add BibTeX entries here.
-*   **`images/`**: Store images for your presentation.
-*   **`pdf/`**
-*   **`tex/`**: Contains the content of the presentation.
-    *   [`tex/main.tex`](presentation/tex/main.tex): Defines the overall structure by including section files.
-    *   `tex/section-*.tex`: Files for individual sections.
-    *   `tex/subsection-*.tex`: Files for subsections within sections.
-    *   [`tex/contents.tex`](presentation/tex/contents.tex): Table of contents.
-*   **`Makefile`**
-
 ## How to Use
 
 #### 1. Set Metadata
