@@ -1,0 +1,22 @@
+% LaTeX presentation template
+\begin{document}
+% title page
+\frame{\titlepage}
+% toc
+\input{tex/contents}
+
+% this is where sections go
+\input{tex/section-intro}
+\input{tex/section-framework}
+\input{tex/section-sota}
+% \input{tex/section-4} % this is just an example
+% \input{tex/section-5} % this is just an example
+
+% keep this for references
+\begin{frame}[allowframebreaks]
+    \frametitle{Referencias}
+    \bibliographystyle{plain}
+    \bibliography{bib/bibliography}
+\end{frame}
+
+\end{document}

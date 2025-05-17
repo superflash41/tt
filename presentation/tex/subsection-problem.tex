@@ -1,0 +1,59 @@
+\subsection{Sub-Sección de la Problemática} % CHANGE HERE THE SUBSECTION'S NAME
+\label{subsec:problem} % ALSO CHANGE THE LABEL
+
+% this is an example of a problem tree
+% you can use it to show the problem you are trying to solve
+\begin{frame}
+    \frametitle{Ejemplo de un Árbol de Problemas}
+
+    \begin{figure}[h!]
+        \centering
+        \begin{tikzpicture}[
+                scale=0.82, transform shape,
+                node distance=1.2cm and 0.5cm,
+                every node/.style={font=\scriptsize, align=center, inner sep=5pt},
+                cause/.style={rectangle, draw=blue, fill=blue!10, rounded corners, text width=1.8cm},
+                effect/.style={rectangle, draw=orange!80!black, fill=orange!20, rounded corners, text width=1.8cm},
+                core/.style={rectangle, draw=black, thick, rounded corners, fill=white, text width=4.5cm, align=center},
+                arrow/.style={-Latex, thick}
+            ]
+            % center
+            \node[core] (problem) {Las soluciones actuales para ARC-AGI logran un razonamiento abstracto limitado y requieren un uso intensivo de recursos computacionales dificultando su resolución eficiente};
+            % effects (above)
+            \node[effect, above=1cm of problem, xshift=-4.2cm] (effect1) {Dificultad en la construcción de modelos adecuados para tareas complejas de razonamiento};
+            \node[effect, above=1cm of problem, xshift=-1.4cm] (effect2) {Dificultad de generalización en modelos para los que se tienen pocos datos};
+            \node[effect, above=1cm of problem, xshift=1.4cm] (effect3) {Altos costos computacionales que limitan el desarrollo de investigaciones en IA};
+            \node[effect, above=1cm of problem, xshift=4.2cm] (effect4) {Oportunidades de mejora en eficiencia en soluciones de ARC-AGI quedan sin explorar};
+            % causes (below)
+            \node[cause, below=1cm of problem, xshift=-4.2cm] (cause1) {Arquitecturas puramente neuronales o puramente simbólicas que no combinan sus ventajas};
+            \node[cause, below=1cm of problem, xshift=-1.4cm] (cause2) {Modelos memoristas con baja capacidad de abstracción y adaptación a nuevas transformaciones};
+            \node[cause, below=1cm of problem, xshift=1.4cm] (cause3) {Dependencia de modelos hacia gran cantidad de recursos computacionales};
+            \node[cause, below=1cm of problem, xshift=4.2cm] (cause4) {Pocas soluciones reproducibles y resultados publicados de arquitecturas neuro-simbólicas para la resolución de ARC-AGI};
+            % arrows to effects
+            \draw[arrow, orange!80!black] (problem) -- (effect1.south);
+            \draw[arrow, orange!80!black] (problem) -- (effect2.south);
+            \draw[arrow, orange!80!black] (problem) -- (effect3.south);
+            \draw[arrow, orange!80!black] (problem) -- (effect4.south);
+            % arrows from causes
+            \draw[arrow, blue] (cause1.north) -- (problem);
+            \draw[arrow, blue] (cause2.north) -- (problem);
+            \draw[arrow, blue] (cause3.north) -- (problem);
+            \draw[arrow, blue] (cause4.north) -- (problem);
+        \end{tikzpicture}
+        \caption{Árbol de Problemas}
+        \label{fig:arbol_problemas}
+    \end{figure}
+
+\end{frame}
+
+% example frame of a particular problem you will attempt to solve
+\begin{frame}
+    \frametitle{Ejemplo de Problema Seleccionado}
+
+    La problemática principal es la \textbf{dificultad actual que presentan los modelos de IA} para realizar
+    \textbf{razonamiento abstracto} y \textbf{generalizar} efectivamente a partir de pocos ejemplos.
+
+    \vspace{1cm}
+    En benchmarks como ARC-AGI se evidencia cómo las arquitecturas actuales, principalmente LLMs, tienen \textbf{limitaciones significativas en
+        términos de eficiencia}, además de sufrir dependencia de grandes volúmenes de datos para su entrenamiento y operación.
+\end{frame}

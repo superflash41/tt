@@ -1,0 +1,34 @@
+% for each command
+% there is an example below
+\title{Título de la Presentación}
+% \title{Reporte de Avance}
+\subtitle{Curso}
+% \subtitle{1INF42 Proyecto de Fin de Carrera 1}
+\author{Nombre del Autor}
+% \author{Saymon Nicho}
+\institute{Nombre de la Universidad}
+% \institute{PUCP}
+\date{Fecha}
+% \date{\today}
+% \date{18 de marzo del 2004}
+
+% a block for relevant information
+% I recommend keeping the size and padding
+% colors can be changed
+\newcommand{\blocky}[2]{
+    \begin{center}
+        \begin{minipage}{0.8\textwidth}
+            \begin{tcolorbox}[
+                    colback=pink!5!white,
+                    colframe=red!75!black,
+                    title=\textbf{#1},
+                    before title={\vspace{4pt}},
+                    after title={\vspace{2pt}},
+                    top=2mm,
+                    bottom=2mm
+                ]
+                #2
+            \end{tcolorbox}
+        \end{minipage}
+    \end{center}
+}

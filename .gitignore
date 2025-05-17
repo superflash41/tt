@@ -1,0 +1,16 @@
+# LaTeX
+*.aux
+*.nav
+*.snm
+*.log
+*.toc
+*.lof
+*.lot
+*.fls
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+
+# *.pdf

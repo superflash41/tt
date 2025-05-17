@@ -1,0 +1,44 @@
+% this is an example of a section with no subsections
+% all frames go here
+\section{Sección de Estado del Arte} % CHANGE HERE THE SECTION'S NAME
+\label{sec:estado-del-arte} % CHANGE HERE THE LABEL
+\begin{frame}
+    \centering
+    \vspace{1cm}
+    {\LARGE\bfseries \insertsectionnumber. \insertsection}
+
+    \rule{0.5\linewidth}{1pt}
+\end{frame}
+
+% this is an example of a frame with an extraction form
+\begin{frame}
+    \frametitle{Ejemplo de Formulario de Extracción de Datos}
+
+    \begin{table}[h!]
+        \centering
+        {\footnotesize
+            \begin{tabular}{|p{1.8cm}|p{5.5cm}|l|}
+                \hline
+                \textbf{Campo}           & \textbf{Descripción}                                                  & \textbf{Pregunta} \\ \hline
+                ID                       & Identificador primario del estudio                                    & General           \\ \hline
+                Título                   & Título del estudio                                                    & General           \\ \hline
+                Autores                  & Autores que formaron parte del estudio                                & General           \\ \hline
+                Año                      & Año de publicación                                                    & General           \\ \hline
+                Fuente                   & Nombre de la revista o conferencia                                    & General           \\ \hline
+                Enlace de consulta       & URL al artículo completo                                              & General           \\ \hline
+                Abstract                 & Resumen del estudio                                                   & General           \\ \hline
+                Citaciones               & Número de citas recibidas                                             & General           \\ \hline
+                Arquitectura             & Arquitectura neuro-simbólica propuesta                                & P1                \\ \hline
+                Enfoque                  & Enfoque de razonamiento utilizado                                     & P1                \\ \hline
+                Dataset y benchmark      & Dataset y benchmark utilizado para la evaluación                      & P2                \\ \hline
+                Eficiencia computacional & Tiempo de entrenamiento, consumo de recursos y complejidad del modelo & P3                \\ \hline
+                Resultados y métricas    & Resultados obtenidos y métricas de rendimiento                        & P4                \\ \hline
+                Limitaciones y brechas   & Limitaciones y brechas identificadas en el estudio                    & P5                \\ \hline
+                Direcciones futuras      & Direcciones futuras de investigación propuestas                       & P5                \\ \hline
+            \end{tabular}
+        }
+        \caption{Formulario de extracción de datos para la revisión sistemática.}
+        \label{tab:formulario-extraccion}
+    \end{table}
+\end{frame}
+
