@@ -1,0 +1,130 @@
+\section{Generalidades}
+\label{sec:generalidades}
+
+\subsection{Problemática}
+\label{subsec:problematica}
+
+\subsubsection{Introducción}
+\label{subsubsec:introduccion}
+
+Se presenta una breve introducción al tema de la investigación, incluyendo el contexto y la importancia del mismo.
+
+Esta debe servir de motivación tanto para el lector como para el autor, y debe incluir una breve descripción de la problemática
+que se va a abordar en el proyecto.
+
+\subsubsection{Árbol de Problemas}
+\label{subsubsec:arbol_problemas}
+
+Se describe la necesidad de usar un árbol de problemas, comúnmente citando a \textcite{vesely2008arbol}.
+
+Además, se incluye el esquema de árbol de problemas.
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}[
+            node distance=2cm and 0.5cm,
+            every node/.style={font=\footnotesize, align=center},
+            cause/.style={rectangle, draw=blue, fill=blue!10, rounded corners, text width=3cm},
+            effect/.style={rectangle, draw=orange!80!black, fill=orange!20, rounded corners, text width=3cm},
+            core/.style={rectangle, draw=black, thick, rounded corners, fill=white, text width=5.5cm, align=center},
+            arrow/.style={-Latex, thick}
+        ]
+
+        \node[core] (problem) {Problema central};
+
+        \node[effect, above=1.5cm of problem, xshift=-6.5cm] (effect1) {Efecto 1};
+        \node[effect, above=1.5cm of problem, xshift=-2cm] (effect2) {Efecto 2};
+        \node[effect, above=1.5cm of problem, xshift=2cm] (effect3) {Efecto 3};
+        \node[effect, above=1.5cm of problem, xshift=6.5cm] (effect4) {Efecto 4};
+
+        \node[cause, below=1.5cm of problem, xshift=-6.5cm] (cause1) {Causa 1};
+        \node[cause, below=1.5cm of problem, xshift=-2cm] (cause2) {Causa 2};
+        \node[cause, below=1.5cm of problem, xshift=2cm] (cause3) {Causa 3};
+        \node[cause, below=1.5cm of problem, xshift=6.5cm] (cause4) {Causa 4};
+
+        \draw[arrow, orange!80!black] (problem) -- (effect1);
+        \draw[arrow, orange!80!black] (problem) -- (effect2);
+        \draw[arrow, orange!80!black] (problem) -- (effect3);
+        \draw[arrow, orange!80!black] (problem) -- (effect4);
+
+        \draw[arrow, blue] (cause1) -- (problem);
+        \draw[arrow, blue] (cause2) -- (problem);
+        \draw[arrow, blue] (cause3) -- (problem);
+        \draw[arrow, blue] (cause4) -- (problem);
+
+    \end{tikzpicture}
+    \caption{Árbol de Problemas}
+    \label{fig:arbol_problemas}
+\end{figure}
+
+\subsubsection{Descripción}
+\label{subsubsec:descripcion}
+
+Se describe de forma narrada el árbol de problemas, explicando las causas y su relación con los efectos,
+así como con la problemática central.
+
+\subsubsection{Problema Seleccionado}
+
+Se detalla de manera concreta el problema seleccionado para la investigación, explicando su relevancia y
+justificando su elección.
+
+\subsection{Objetivos}
+\label{subsec:objetivos}
+
+En esta sección se presentan el objetivo general y los objetivos específicos del proyecto. El objetivo general
+se enfoca en la resolución de la problemática seleccionada, mientras que los objetivos específicos están relacionados con
+los problemas-causa planteados en el árbol de problemas.
+
+\subsubsection{Objetivo General}
+\label{subsubsec:objetivo_general}
+
+Se define el objetivo general de la investigación.
+
+\subsubsection{Objetivos Específicos}
+\label{subsubsec:objetivos_especificos}
+
+Se detallan los objetivos específicos de la investigación, que deben ser medibles y alcanzables.
+
+\textbf{O1. <Verbo en infinitivo>} <Descripción del objetivo específico 1>.
+
+\textbf{O2. <Verbo en infinitivo>} <Descripción del objetivo específico 2>.
+
+\textbf{O3. <Verbo en infinitivo>} <Descripción del objetivo específico 3>.
+
+\textbf{O4. <Verbo en infinitivo>} <Descripción del objetivo específico 4>.
+
+\subsubsection{Resultados Esperados}
+\label{subsubsec:resultados_esperados}
+
+Se explican los resultados esperados de acuerdo a los objetivos específicos planteados en la sección anterior.
+
+\subsubsection{Mapeo de Resultados Esperados y Medios de Verificación}
+\label{subsubsec:mapeo_objetivos}
+
+Esta sección detalla cómo cada resultado esperado de la investigacion se asocia a un medio de verificación específico, y a indicadores
+objetivamente verificables (IOV). Este mapeo permite establecer una relación clara entre los objetivos planteados y los métodos
+empleados para evaluar su cumplimiento, facilitando así la medición del progreso y el éxito del proyecto.
+
+\begin{table}[h!]
+    \centering
+    {\footnotesize
+        \begin{tabular}{|p{4cm}|p{5.5cm}|p{5.5cm}|}
+            \hline
+            \multicolumn{3}{|p{15cm}|}{\textbf{O1. Objetivo específico 1.}}                                             \\
+            \hline
+            \textbf{Resultado Esperado} & \textbf{Medio de Verificación}           & \textbf{IOV}                       \\
+            \hline
+            R1. Resultado Esperado 1    & Forma de Verificar el resultado esperado & Indicador objetivamente verifiable \\
+            \hline
+            R2. Resultado Esperado 2    & Forma de Verificar el resultado esperado & Indicador objetivamente verifiable \\
+            \hline
+            R3. Resultado Esperado 3    & Forma de Verificar el resultado esperado & Indicador objetivamente verifiable \\
+            \hline
+        \end{tabular}
+    }
+    \caption{Resultados Esperados, Medios de Verificación e IOV para el Objetivo 1}
+    \label{tab:mapeo_objetivos_1}
+
+\end{table}
+
+Lo mismo se hace para los demás objetivos específicos.

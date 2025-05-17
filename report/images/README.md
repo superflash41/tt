@@ -1,0 +1,1 @@
+In this folder you must put the images of the report.
